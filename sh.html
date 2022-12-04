@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+      <link rel="stylesheet" href="style.css">
+      <title>Health and fitness blog</title>
+<style>
+button,li{
+       font-size: 17px;}
+img{ width: 1080px;
+     height: 500px;
+    }
+h6{font-family:sans-serif;
+   font-size:50px;
+}
+h5{font-family:sans-serif;
+   font-size:30px;
+}
+h4{font-family:sans-serif;
+color:white;
+   font-size:20px;
+}
+.open-button{
+  background-color: white;
+  border: white;  
+}
+.abcd li a{
+        color: black;
+}
+.abcd li a:hover{
+        text-decoration: underline;
+        color: rgb(240, 23, 23);
+}
+.open-button:hover{
+  text-decoration: underline;
+        color: rgb(240, 23, 23);
+   
+}
+.form-popup {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form-container {
+  max-width: 480px;
+  max-height: 1700px;
+  padding: 10px;
+  background-color: white;
+}
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+
+</style>
+
+</head>
+<body>
+      <div class="container">
+        <header>
+          <nav>
+             <div class ="logo">
+                <h2>Health and fitness</h2>
+             </div>
+             <ul class="abcd">
+                 <li><a href="sh.html">Home</a></li>
+                 <li><a href="vk510.html">About us</a></li>
+                 <li><a href="vk514.html">Contact</a></li>
+                 <li><button class="open-button" onclick="openForm()">Login</button></li>
+                 <li><button class="open-button" onclick="openForm1()">Register</button></li>
+                 <li><a href="s-h.html">Check BMI</a></li> 
+                                
+
+
+             </ul>
+             <a href="#"  class="mobile">&#9776;</a>
+          </nav>
+        </header>
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h2>Login</h2>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn" onclick="return abc()">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+
+
+</div>
+<div class="form-popup" id="myyForm">
+<form action="/action_page.php" class="form-container">
+    <h2>Register</h2>
+    
+
+    <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname"  placeholder="enter Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="enter your last name.">
+
+
+    <label for="address">Address</label>
+    <input type="text" id="Address" name="Address" placeholder="enter your address">
+
+
+    <label for="Phone no.">Phone no.</label>
+    <input type="text" id="Phone no." name="Phone no." placeholder="enter your phone number.">
+
+
+    <label for="Email id">Email id</label>
+    <input type="text" id="Email id" name="Email id" placeholder="enter your email id.">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">India</option>
+      <option value="canada">Pakistan</option>
+      <option value="usa">USA</option>
+    </select>
+      <button type="submit" class="btn" onclick="abc1()">Register</button>
+    <button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+  </form>
+
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+function openForm1() {
+  document.getElementById("myyForm").style.display = "block";
+}
+
+function closeForm1() {
+  document.getElementById("myyForm").style.display = "none";
+}
+function abc(){
+alert( "fill up");
+ 
+}  
+function abc1(){
+ window.alert("registered")
+}
+
+</script>
+
+
+
+        <aside>
+  <div class="post">
+                  <h1>Recent Blogs</h1>
+ <ul>
+             <div class="post">
+                  <h4>Benefits of Exercises</h4>
+                  <ul>
+                      <li><a href="vk516.html">Exercises for mental wellbeing</a></li>
+                      <li><a href="vk517.html">Exercises for hearthealth</a></li>
+                      <li><a href="vk518.html">Exercises for good digestion</a></li>
+                      <li><a href="vk519.html">Exercises for good memory </a></li>
+                  </ul>
+             </div> </ul>
+<br>
+<ul><div class="post">
+                  <h4>Benefits of healthy diets</h4>
+                  <ul>
+                      <li><a href="vk520.html">Benefits of Fruits</a></li>
+                      <li><a href="vk521.html">Benefits of Green Vegetables</a></li>
+                      <li><a href="vk522.html">Benefits of Herbs</a></li>
+                      <li><a href="vk523.html">Benefits of Green Tea</a></li>
+          
+                  </ul>
+             </div>
+   </ul><br>
+   <ul><div class="post">
+                  <h4>Risk related to exercises</h4>
+                  <ul>
+                      <li><a href="vk524.html">Musculoskeletal system injury</a></li>
+                      <li><a href="vk525.html">Cardiac problems </a></li>
+                      <li><a href="vk526.html">Asthma problem</a></li>
+                   
+                    
+                  </ul>
+             </div>   </ul>
+        </aside>
+        <main>
+            <div class="blog.post">
+                <div class="meta">
+                   <h6>Health and Fitness Guide</h6>
+"Health is wealth" a famous quote that emphasize on the importance of good health.
+Everything you do like walking,
+lifting weights,doing workout etc that cause sweating-it's all very good.
+These works burn excessive fats,
+make you mascular,help to lower cholestrol and help you to fight with stress and anxiety.
+
+
+
+
+<img src="gim1.jpg" alt="">
+<h5>What health holds?</h5>
+Health holds a wonderful and happy life.If you are healthy, you feel confident and able to adventure extremes of nature.Being healthy and fit simply means taking good care of the body. We must remember that a healthy mind is only in a healthy body. Good health of both body and mind helps one to maintain the energy level required to achieve success in life. We should all strive for healthy health.
+
+Protecting your body from the intake of harmful substances, exercising regularly, eating well and sleeping are some of the important examples of a healthy lifestyle. Being fit allows us to carry out our activities without feeling lethargic, restless or tired.
+
+A healthy and fit person is able to live life to the fullest, without major medical or physical problems. Being healthy is not just about a person's physical well-being, it is also about a person's mental stability or inner peace.
+
+In general, a healthy diet consists of taking good and wholesome food, which includes eating green and fresh vegetables, fruits, milk, eggs, minerals, proteins and vitamins that are essential for a human's lifestyle. Practicing yoga, including regular exercises in your daily routine, also helps you maintain your desired fitness, blood sugar and immunity level.
+
+Healthy habits improve your physical appearance, mental stability, ability to perform activities in a better manner, which helps you lead a stress-free lifestyle, maintain a happy mood, maintain a high energy level, etc. Every individual needs to maintain their health regard as a priority; not a single day should be missed to make efforts to maintain physical and mental fitness. Being happy is directly related to increasing your mental strength and health, so happiness can be considered both the result and part of a healthy and fit lifestyle.
+
+Conclusion: health is the most important thing that a person should take care of that helps you to achieve success and happiness.
+
+            
+                </div>
+                <div class="post">
+                    <img src="gim2.jpg" alt="">
+                   
+                </div>
+</div>
+
+             <div class="blog.post">
+                <div class="meta">
+                 
+                   <h5>Health and Fitness parameters</h5>
+                   Health can generally be measured by three main parameters: physical, psychological and nutritional. Physical health means the physical image of a person; Nutritional health means the presence of essential nutrients in the body to fight diseases with immunity. Mental health means the ability of a person to maintain patience, composure and composure in all circumstances of life.
+Healthy and nutritious eating, exercising, getting enough sleep, avoiding the intake of harmful substances are just a few simple ways to stay healthy and fit. These facts and figures are directly related to our mental, physical and emotional health.
+ The main reasons leading to deterioration of health are the following:
+
+Daily Stress – Students often feel stressed about schoolwork and exams. Professionals are also prone to stress related to their lives and work. Such conditions lead to unbalanced mental health.
+Depression - Prolonged stress about something leads to depression and becomes a health problem.
+Intake of harmful substances such as alcohol, preserved food, etc. has a negative impact on physical and mental health and fitness.
+Lack of sleep - People tend to work late at night, constantly use their phones, etc. and forego their predetermined sleep cycle. As suggested by medical experts, a certain sleep time is mandatory for every individual. Lack of sleep results in an unhealthy lifestyle.
+Junk Food - Junk food intake has replaced the proper diet that one should be consuming. Unhealthy dietary habits directly create unhealthy well-being.               
+</div>
+                <div class="post">
+                    <img src="img src=gim3.jpg" alt="">
+                </div>
+                   The main reasons leading to deterioration of health are the following:
+
+Daily Stress – Students often feel stressed about schoolwork and exams. Professionals are also prone to stress associated with their lives and work. Such conditions lead to unbalanced mental health.
+Depression - Prolonged stress about something leads to depression and becomes a health problem.
+Intake of harmful substances such as alcohol, preserved food, etc. has a negative impact on physical and mental health and fitness.
+Lack of sleep - People tend to work late at night, constantly use their phones, etc. and forgo their predetermined sleep cycle. As suggested by medical experts, a certain sleep time is mandatory for every individual. Sleep deprivation leads to an unhealthy lifestyle.
+Junk Food - The intake of junk food has replaced the proper diet that one should be consuming. Unhealthy dietary habits directly create unhealthy well-being.
+                </div>
+
+             </div>       
+        </main>
+
+        <footer>
+<div class="blog.post">
+    <div class="meta">
+                 
+
+
+</div> 
+      
+        </footer>
+      </div>         
+
+
+
+
+</body>
+</html>

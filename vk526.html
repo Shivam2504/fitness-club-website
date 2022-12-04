@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+      <link rel="stylesheet" href="style.css">
+      <title>Health and fitness blog</title>
+<style>
+button,li{
+       font-size: 17px;}
+img{ width: 1080px;
+     height: 500px;
+    }
+h6{font-family:sans-serif;
+   font-size:50px;
+}
+h5{font-family:sans-serif;
+   font-size:30px;
+}
+h4{font-family:sans-serif;
+color:white;
+   font-size:20px;
+}
+
+.open-button {
+  background-color:#f9f9f9 ;
+  color: black;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+
+}
+.form-popup {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form-container {
+  max-width: 480px;
+  max-height: 1700px;
+  padding: 10px;
+  background-color: white;
+}
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+</style>
+
+</head>
+<body>
+      <div class="container">
+        <header>
+          <nav>
+             <div class ="logo">
+                <h2>Health and fitness</h2>
+             </div>
+             <ul>
+                 <li><a href="sh.html">Home</a></li>
+                 <li><a href="vk510.html">About us</a></li>
+                 <li><a href="vk514.html">Contact</a></li>
+                 <li><button class="open-button" onclick="openForm()">Login</button></li>
+                 <li><button class="open-button" onclick="openForm1()">Register</button></li>
+                  <li><a href="s-h.html">Check BMI</a></li> 
+                                
+
+
+             </ul>
+             <a href="#"  class="mobile">&#9776;</a>
+          </nav>
+        </header>
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h2>Login</h2>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn" onclick="abc()">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+
+
+</div>
+<div class="form-popup" id="myyForm">
+<form action="/action_page.php" class="form-container">
+    <h2>Register</h2>
+    
+
+    <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+    <label for="address">Address</label>
+    <input type="text" id="Address" name="Address" placeholder="Your last name..">
+
+
+    <label for="Phone no.">Phone no.</label>
+    <input type="text" id="Phone no." name="Phone no." placeholder="Your last name..">
+
+
+    <label for="Email id">Email id</label>
+    <input type="text" id="Email id" name="Email id" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">India</option>
+      <option value="canada">Pakistan</option>
+      <option value="usa">USA</option>
+    </select>
+      <button type="submit" class="btn" onclick="abc1()">Register</button>
+    <button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+  </form>
+
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+function openForm1() {
+  document.getElementById("myyForm").style.display = "block";
+}
+
+function closeForm1() {
+  document.getElementById("myyForm").style.display = "none";
+}
+function abc()
+{
+  window.alert("Check your password");
+}
+function abc1()
+{
+  window.alert("Check your password");
+}
+
+</script>
+
+
+
+    <aside>
+  <div class="post">
+                  <h1>Recent Blogs</h1>
+ <ul>
+             <div class="post">
+                  <h4>Benefits of Exercises</h4>
+                  <ul>
+                      <li><a href="vk516.html">Exercises for mental wellbeing</a></li>
+                      <li><a href="vk517.html">Exercises for hearthealth</a></li>
+                      <li><a href="vk518.html">Exercises for good digestion</a></li>
+                      <li><a href="vk519.html">Exercises for good memory </a></li>
+                  </ul>
+             </div> </ul>
+<br>
+<ul><div class="post">
+                  <h4>Benefits of healthy diets</h4>
+                  <ul>
+                      <li><a href="vk520.html">Benefits of Fruits</a></li>
+                      <li><a href="vk521.html">Benefits of Green Vegetables</a></li>
+                      <li><a href="vk522.html">Benefits of Herbs</a></li>
+                      <li><a href="vk523.html">Benefits of Green Tea</a></li>
+          
+                  </ul>
+             </div>
+   </ul><br>
+   <ul><div class="post">
+                  <h4>Risk related to exercises</h4>
+                  <ul>
+                      <li><a href="vk524.html">Musculoskeletal system injury</a></li>
+                      <li><a href="vk525.html">Cardiac problems </a></li>
+                      <li><a href="vk526.html">Asthma problem</a></li>
+                   
+                    
+                  </ul>
+             </div>   </ul>
+        </aside>
+        <main>
+            <div class="blog.post">
+                <div class="meta">
+                   <h6>Asthama problem</h6>
+Exercise-induced asthma is a narrowing of the airways in the lungs triggered by strenuous exercise. It causes shortness of breath, wheezing, coughing, and other symptoms during or after exercise.
+
+The preferred term for this condition is exercise-induced bronchoconstriction (brong-koh-kun-STRIK-shun). This term is more accurate because the exercise induces narrowing of airways (bronchoconstriction) but isn't a root cause of asthma. Among people with asthma, exercise is likely just one of several factors that can trigger breathing difficulties.
+
+Most people with exercise-induced bronchoconstriction can continue to exercise and remain active by treating the symptoms with asthma medications and taking preventive measures.
+<h3>Symptoms</h3>
+Signs and symptoms of exercise-induced bronchoconstriction usually begin during or soon after exercise. These symptoms can last for 60 minutes or longer if untreated. The signs and symptoms can include:
+ </div>
+                <div class="post">
+                    <img src="istockphoto-1220884741-612x612.jpg" alt="">
+                   
+                </div>
+</div>
+Coughing
+Wheezing
+Shortness of breath
+Chest tightness or pain
+Fatigue during exercise
+Poorer than expected athletic performance
+Avoidance of activity (a sign primarily among young children)
+When to see a doctor
+See your doctor if you have signs or symptoms of exercise-induced bronchoconstriction. A number of conditions can cause similar symptoms, making it important to get a prompt and accurate diagnosis.
+ <img src="istockphoto-974688204-612x612.jpg" alt="">
+Get emergency medical treatment if you have:
+
+Shortness of breath or wheezing that is quickly increasing, making it a struggle to breathe
+No improvement even after using a prescription inhaler for asthma attacks
+Causes
+It's not clear what causes exercise-induced bronchoconstriction. There may be more than one biological process involved. People with exercise-induced bronchoconstriction have inflammation and might produce excess mucus after hard exercise.
+
+Risk factors
+Exercise-induced bronchoconstriction is more likely to occur in:
+
+People with asthma. About 90% of people with asthma have exercise-induced bronchoconstriction. However, the condition can occur in people without asthma too.
+Elite athletes. Although anyone can have exercise-induced bronchoconstriction, it's more common in high-level athletes.
+Factors that can increase the risk of the condition or act as triggers include:
+
+Cold air
+Dry air
+Air pollution
+Chlorine in swimming pools
+Chemicals from ice cleaning equipment
+Activities with extended periods of deep breathing, such as long-distance running, swimming or soccer
+Complications
+If not treated, exercise-induced bronchoconstriction can result in:
+
+Serious or life-threatening breathing difficulties, particularly among people with poorly managed asthma
+Lower quality of life because of inability to exercise
+</div> 
+      
+        </footer>
+      </div>         
+
+
+
+
+</body>
+</html>

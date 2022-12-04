@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+      <link rel="stylesheet" href="style.css">
+      <title>Health and fitness blog</title>
+<style>
+button,li{
+       font-size: 17px;}
+img{ width: 1080px;
+     height: 500px;
+    }
+h6{font-family:sans-serif;
+   font-size:50px;
+}
+h5{font-family:sans-serif;
+   font-size:30px;
+}
+h4{font-family:sans-serif;
+color:white;
+   font-size:20px;
+}
+
+.open-button {
+  background-color:#f9f9f9 ;
+  color: black;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+
+}
+.form-popup {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form-container {
+  max-width: 480px;
+  max-height: 1700px;
+  padding: 10px;
+  background-color: white;
+}
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+</style>
+
+</head>
+<body>
+      <div class="container">
+        <header>
+          <nav>
+             <div class ="logo">
+                <h2>Health and fitness</h2>
+             </div>
+             <ul>
+                 <li><a href="sh.html">Home</a></li>
+                 <li><a href="vk510.html">About us</a></li>
+                 <li><a href="vk514.html">Contact</a></li>
+                 <li><button class="open-button" onclick="openForm()">Login</button></li>
+                 <li><button class="open-button" onclick="openForm1()">Register</button></li>
+                  <li><a href="s-h.html">Check BMI</a></li> 
+                                
+
+
+             </ul>
+             <a href="#"  class="mobile">&#9776;</a>
+          </nav>
+        </header>
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h2>Login</h2>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn" onclick="abc()">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+
+
+</div>
+<div class="form-popup" id="myyForm">
+<form action="/action_page.php" class="form-container">
+    <h2>Register</h2>
+    
+
+    <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+    <label for="address">Address</label>
+    <input type="text" id="Address" name="Address" placeholder="Your last name..">
+
+
+    <label for="Phone no.">Phone no.</label>
+    <input type="text" id="Phone no." name="Phone no." placeholder="Your last name..">
+
+
+    <label for="Email id">Email id</label>
+    <input type="text" id="Email id" name="Email id" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">India</option>
+      <option value="canada">Pakistan</option>
+      <option value="usa">USA</option>
+    </select>
+      <button type="submit" class="btn" onclick="abc1()">Register</button>
+    <button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+  </form>
+
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+function openForm1() {
+  document.getElementById("myyForm").style.display = "block";
+}
+
+function closeForm1() {
+  document.getElementById("myyForm").style.display = "none";
+}
+function abc()
+{
+  window.alert("Check your password");
+}
+function abc1()
+{
+  window.alert("Check your password");
+}
+
+</script>
+
+
+
+            <aside>
+  <div class="post">
+                  <h1>Recent Blogs</h1>
+ <ul>
+             <div class="post">
+                  <h4>Benefits of Exercises</h4>
+                  <ul>
+                      <li><a href="vk516.html">Exercises for mental wellbeing</a></li>
+                      <li><a href="vk517.html">Exercises for hearthealth</a></li>
+                      <li><a href="vk518.html">Exercises for good digestion</a></li>
+                      <li><a href="vk519.html">Exercises for good memory </a></li>
+                  </ul>
+             </div> </ul>
+<br>
+<ul><div class="post">
+                  <h4>Benefits of healthy diets</h4>
+                  <ul>
+                      <li><a href="vk520.html">Benefits of Fruits</a></li>
+                      <li><a href="vk521.html">Benefits of Green Vegetables</a></li>
+                      <li><a href="vk522.html">Benefits of Herbs</a></li>
+                      <li><a href="vk523.html">Benefits of Green Tea</a></li>
+          
+                  </ul>
+             </div>
+   </ul><br>
+   <ul><div class="post">
+                  <h4>Risk related to exercises</h4>
+                  <ul>
+                      <li><a href="vk524.html">Musculoskeletal system injury</a></li>
+                      <li><a href="vk525.html">Cardiac problems </a></li>
+                      <li><a href="vk526.html">Asthma problem</a></li>
+                   
+                    
+                  </ul>
+             </div>   </ul>
+        </aside>
+        <main>
+            <div class="blog.post">
+                <div class="meta">
+                   <h6>Exercises for hearthealth</h6>Exercise and your heart
+Regular exercise is important for all adults to keep their muscles strong and flexible, and is essential for a healthy heart. Physical activity and exercise not only help prevent your risk of heart attack and heart disease, but it can also help you improve and manage heart disease that has already developed.
+
+This article discusses the best type of exercise for optimal heart health.Exercise and regular exercise have several benefits for heart health, including: 1
+
+
+Increases the strength of the heart muscle
+Improves lung function
+Lowers blood pressure
+Lowers high cholesterol
+Lowers high blood sugar
+Lowers high triglycerides
+Lowers levels of C-reactive protein, an inflammatory protein that is elevated in chronic conditions
+Reduces the risk of heart attack and heart disease
+Types of exercises
+To improve your heart health and reduce your risk of heart disease, it's important to include aerobics, strength training, and stretching in your exercise routine.
+Aerobic exercise
+Aerobic exercise is any activity that makes your heart beat faster and your breathing rate faster than at rest, pumping oxygen-rich blood to your working muscles. Over time, regular aerobics strengthens your heart and lungs, making them work more efficiently. Aerobic exercise includes:
+
+To walk
+Run
+Hiking
+Swimming
+Jumping rope
+To dance
+Bicycles
+Jumping jacks
+Walking stairs
+To play sports
+Weight training
+Strength training is an exercise designed to specifically increase muscle strength through resistance training. Resistance can be in the form of weights, resistance bands, or using your own body weight with moves such as:
+
+Imprints
+Pull up
+dips
+Squat
+lunges
+Stepping stones
+Stretch
+Stretching is a form of exercise that increases the flexibility of your muscles and the ability to move your joints through their full range of motion with movement. Good muscle flexibility and joint mobility is necessary to reduce the risk of injury from physical activity and exercise.
+
+How long should you train and how often?
+According to 2019 guidelines from the American College of Cardiology and the American Heart Association, adults should participate in one of the following periods of physical activity weekly to promote optimal heart health and reduce the risk of developing atherosclerotic cardiovascular disease (ASCVD):2
+
+150 minutes of moderate-intensity physical activity
+75 minutes of intense physical activity
+An equal combination of moderate and vigorous physical activity
+The exercise intensity is grouped into the following categories:3
+
+<img src="download (2).jpg" alt="">
+Light intensity: walking slowly, cooking, light housework
+Moderate intensity: brisk walking (2.4-4.0 miles per hour), biking (5-9 miles per hour), dancing, active yoga, recreational swimming, gardening, vacuuming, raking leaves
+Vigorous intensity: jogging, running, walking, cycling (≥10 miles per hour), lap swimming, jumping rope, aerobics, lifting weights, climbing stairs, shoveling snow
+These guidelines suggest that a shorter duration of physical activity of 10 minutes or less may be just as beneficial as a longer duration of more than 10 minutes. Therefore, the total duration of weekly physical activity should be emphasized more than the duration of each individual activity or training session.
+
+To make it easier to reach your training goals, the duration of physical activity can be divided into 10-minute sessions: fifteen 10-minute training sessions spread over the week can have similar benefits to five 30-minute sessions.
+
+Additional exercise beyond the minimum recommendations further promotes better heart health and lowers the risk of cardiovascular disease. Improved positive outcomes have been associated with the following duration of physical activity per week:
+
+300 minutes or more of moderate-intensity physical activity
+150 minutes or more of vigorous physical activity
+However, very high levels of exercise well beyond these amounts have no significant additional benefits.
+
+<img src="pexels-mikhail-nilov-6945081.jpg" alt="">
+For adults who are unable to meet minimum exercise recommendations, participation in some form of exercise is still beneficial for good heart health. Unless your healthcare provider advises you to avoid physical activity for medical reasons, some exercise, when done safely and properly, is better than none.
+
+Exercise Precautions
+Sedentary individuals should always start slowly and gradually increase exercise intensity, duration and frequency over time. If you become easily short of breath, have heart disease, or have high blood pressure, your health care provider can give you specific safety guidelines to follow.
+
+For most adults without significant heart, lung, blood vessel, muscle or joint problems, walking at an average pace of 3 miles per hour is generally a safe and effective way to add moderate-intensity physical activity to your day.
+
+Always be sure to check with your health care provider before beginning or increasing any exercise program to make sure your heart, lungs, and blood vessels are healthy enough to function properly.
+
+Being active if you have heart disease
+If you have heart disease, your heart doesn't work as efficiently as it should, and it will have to work harder to pump blood around your body during exercise. Therefore, you should start with a lower intensity and shorter duration of physical activity to give your heart time to get stronger and build the capacity to support the cardiovascular demands of exercise.
+
+Your healthcare provider may also recommend keeping your heart rate within a target range and stopping exercise if your heart rate exceeds a certain limit to protect your heart and prevent damage from cardiac overload. These values ​​are personalized for you depending on your average resting heart rate.
+
+Overview
+Exercise is a specific form of physical activity that is structured and planned and includes aerobic exercise, strength training, and stretching. At least 150 minutes of moderate physical activity or 75 minutes of vigorous physical activity per week is recommended to maintain good heart health and lower the risk of heart disease. Always be sure to talk to your healthcare provider before starting any new exercise program to make sure it's right for you.
+
+A word from very good
+Movement is an important part of that
+</div> 
+      
+        </footer>
+      </div>         
+
+
+
+
+</body>
+</html>

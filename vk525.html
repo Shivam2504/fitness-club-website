@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+      <link rel="stylesheet" href="style.css">
+      <title>Health and fitness blog</title>
+<style>
+button,li{
+       font-size: 17px;}
+img{ width: 1080px;
+     height: 500px;
+    }
+h6{font-family:sans-serif;
+   font-size:50px;
+}
+h5{font-family:sans-serif;
+   font-size:30px;
+}
+h4{font-family:sans-serif;
+color:white;
+   font-size:20px;
+}
+
+.open-button {
+  background-color:#f9f9f9 ;
+  color: black;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+
+}
+.form-popup {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form-container {
+  max-width: 480px;
+  max-height: 1700px;
+  padding: 10px;
+  background-color: white;
+}
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+</style>
+
+</head>
+<body>
+      <div class="container">
+        <header>
+          <nav>
+             <div class ="logo">
+                <h2>Health and fitness</h2>
+             </div>
+             <ul>
+                 <li><a href="sh.html">Home</a></li>
+                 <li><a href="vk510.html">About us</a></li>
+                 <li><a href="vk514.html">Contact</a></li>
+                 <li><button class="open-button" onclick="openForm()">Login</button></li>
+                 <li><button class="open-button" onclick="openForm1()">Register</button></li>
+                  <li><a href="s-h.html">Check BMI</a></li> 
+                                
+
+
+             </ul>
+             <a href="#"  class="mobile">&#9776;</a>
+          </nav>
+        </header>
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h2>Login</h2>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn" onclick="abc()">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+
+
+</div>
+<div class="form-popup" id="myyForm">
+<form action="/action_page.php" class="form-container">
+    <h2>Register</h2>
+    
+
+    <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+    <label for="address">Address</label>
+    <input type="text" id="Address" name="Address" placeholder="Your last name..">
+
+
+    <label for="Phone no.">Phone no.</label>
+    <input type="text" id="Phone no." name="Phone no." placeholder="Your last name..">
+
+
+    <label for="Email id">Email id</label>
+    <input type="text" id="Email id" name="Email id" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">India</option>
+      <option value="canada">Pakistan</option>
+      <option value="usa">USA</option>
+    </select>
+      <button type="submit" class="btn" onclick="abc1()">Register</button>
+    <button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+  </form>
+
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+function openForm1() {
+  document.getElementById("myyForm").style.display = "block";
+}
+
+function closeForm1() {
+  document.getElementById("myyForm").style.display = "none";
+}
+function abc()
+{
+  window.alert("Check your password");
+}
+function abc1()
+{
+  window.alert("Check your password");
+}
+
+</script>
+
+
+
+    <aside>
+  <div class="post">
+                  <h1>Recent Blogs</h1>
+ <ul>
+             <div class="post">
+                  <h4>Benefits of Exercises</h4>
+                  <ul>
+                      <li><a href="vk516.html">Exercises for mental wellbeing</a></li>
+                      <li><a href="vk517.html">Exercises for hearthealth</a></li>
+                      <li><a href="vk518.html">Exercises for good digestion</a></li>
+                      <li><a href="vk519.html">Exercises for good memory </a></li>
+                  </ul>
+             </div> </ul>
+<br>
+<ul><div class="post">
+                  <h4>Benefits of healthy diets</h4>
+                  <ul>
+                      <li><a href="vk520.html">Benefits of Fruits</a></li>
+                      <li><a href="vk521.html">Benefits of Green Vegetables</a></li>
+                      <li><a href="vk522.html">Benefits of Herbs</a></li>
+                      <li><a href="vk523.html">Benefits of Green Tea</a></li>
+          
+                  </ul>
+             </div>
+   </ul><br>
+   <ul><div class="post">
+                  <h4>Risk related to exercises</h4>
+                  <ul>
+                      <li><a href="vk524.html">Musculoskeletal system injury</a></li>
+                      <li><a href="vk525.html">Cardiac problems </a></li>
+                      <li><a href="vk526.html">Asthma problem</a></li>
+                   
+                    
+                  </ul>
+             </div>   </ul>
+        </aside>
+        <main>
+            <div class="blog.post">
+                <div class="meta">
+                   <h6>Cardiac problems</h6>
+Moderate exercise a few days a week is good for your health, but new research shows that more is not always better.
+
+At the risk of encouraging you to binge-watch on the couch a little longer, too much exercise may be bad for your heart, say researchers in a new study.
+
+But before you get too comfortable, keep in mind that an inactive lifestyle increases your risk of obesity, heart disease, type 2 diabetes and a host of other chronic diseases.
+
+We know this because scientists have been studying the lower limits of exercise for many years.
+
+All to answer the question: What is the minimum amount of physical activity you need each week to live longer and healthier?
+
+More studies have recently begun to look at the other end of the exercise spectrum to see if more is always better.
+                <div class="post">
+                    <img src="download (2).jpg" alt="">
+                   
+                </div>
+
+Extreme exercise can carry risks
+One of these studies was published Oct. 16 in Mayo Clinic Proceedings.
+
+Researchers found that people who exercised well above national physical activity guidelines for years were more likely to develop coronary artery calcification (CAC) in middle age.
+
+CAC, which is measured using CT scans, indicates that calcium-containing plaques are present in the arteries of the heart - a predictor of heart disease.
+
+The study included nearly 3,200 people. Researchers followed them for 25 years, starting when they were young adults.
+
+At the start of the study and during three to eight follow-up visits, participants reported how often and what types of physical activities they engaged in.
+
+Researchers used this information to divide the participants into three groups: those who met the exercise guidelines, those who fell below them, and those who exceeded them at least three times.
+
+The U.S. Department of Health and Human Services' "2008 Physical Activity Guidelines for Americans" recommend that adults engage in at least 150 minutes per week of moderate-intensity or 75 minutes per week of vigorous, aerobic activity.
+
+High-intensity activities include running, cycling, swimming, fitness or dance classes, and strenuous sports.
+
+Moderate-intensity activities include walking, hiking, golf, home exercise, and gardening.
+
+People who exercised three times the recommended amount -- or the equivalent of 450 minutes a week of moderate activity -- had a 27 percent higher risk of developing CAC during the study period, compared to those who exercised the least.
+
+The effects of extreme exercise were even greater for white participants.
+
+This group had an 80 percent higher risk of developing CAC. The risk was slightly higher for white men than for white women.
+
+Statistically, however, the results based on race and sex were only significant for white men. This is probably because the other groups had too few participants.
+
+The study also highlighted the benefits of regularly meeting exercise guidelines.
+
+People who exercised less than recommended amounts were more likely to develop high blood pressure and type 2 diabetes in middle age.
+                <div class="post">
+                    <img src="gim1.jpg" alt="">
+                   
+                </div>
+
+Exercise and heart health
+Does this mean that the presence of CAC in people who exercise at least 7.5 hours a week is later a sign of heart disease?
+
+The answer is… possible.
+
+"High levels of exercise over time can put stress on the arteries, leading to higher CAC," said Dr. Jamal Rana, a study author, in a press release. "However, this plaque buildup may be of the more stable kind, and thus less likely to rupture and cause heart attack, which was not evaluated in this study."
+
+Rana said they plan to continue to monitor the participants to see how many have heart attacks, other health problems or die early.
+
+Other studies have found similar harms from high doses of physical activity.
+
+In the Copenhagen City Heart Study, moderate joggers had a 3-fold increased risk of premature death, compared to light joggers. For strenuous joggers, the risk was nine times higher.
+
+The Million Women Study found that women who performed strenuous activities on a daily basis had a higher risk of heart disease, stroke, or a blood clot that broke loose in the blood, compared to moderate exercisers.
+
+However, not all studies indicate that extreme exercise is bad for your health.
+<div class="post">
+                    <img src="gim2.jpg" alt="">
+                   
+                </div>
+
+In a Swedish study of nearly 74,000 non-elite long-distance cross-country skiers, those who finished more races had a lower risk of dying early.
+
+Other studies have shown that the arteries of male ultra-distance runners have larger diameters and can dilate more than those of physically inactive men.
+
+The authors of the current study wrote that while extreme athletes may have higher amounts of CAC, wider arteries mean it "does not necessarily lead to adverse clinical outcomes."
+
+Of course, none of this is a reason to stop being active. In fact, many Americans could probably use a little more physical activity in their lives.
+
+According to the Centers for Disease Control and Prevention (CDC), just over half of American adults met aerobic activity guidelines. And only one-fifth met guidelines for both aerobic and strengthening activities.
+
+The current study, like other research, suggests that there may be an upper limit to the benefits of exercise. After that, the added stress can take a toll on your body, especially the heart.
+
+For those dedicated athletes who like to push their limits, this research is even more reason to make an extra effort to take care of your heart.
+
+This includes eating a healthy diet, quitting smoking, and learning how to manage your stress with practices like yoga, meditation, and mindfulness training.
+</div> 
+      
+        </footer>
+      </div>         
+
+
+
+
+</body>
+</html>

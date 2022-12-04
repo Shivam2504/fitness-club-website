@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+      <link rel="stylesheet" href="style.css">
+      <title>Health and fitness blog</title>
+<style>
+button,li{
+       font-size: 17px;}
+img{ width: 1080px;
+     height: 500px;
+    }
+h6{font-family:sans-serif;
+   font-size:50px;
+}
+h5{font-family:sans-serif;
+   font-size:30px;
+}
+h4{font-family:sans-serif;
+color:white;
+   font-size:20px;
+}
+
+.open-button {
+  background-color:#f9f9f9 ;
+  color: black;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+
+}
+.form-popup {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form-container {
+  max-width: 480px;
+  max-height: 1700px;
+  padding: 10px;
+  background-color: white;
+}
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+</style>
+
+</head>
+<body>
+      <div class="container">
+        <header>
+          <nav>
+             <div class ="logo">
+                <h2>Health and fitness</h2>
+             </div>
+             <ul>
+                 <li><a href="sh.html">Home</a></li>
+                 <li><a href="vk510.html">About us</a></li>
+                 <li><a href="vk510.html">Contact</a></li>
+                 <li><button class="open-button" onclick="openForm()">Login</button></li>
+                 <li><button class="open-button" onclick="openForm1()">Register</button></li>
+                 <li><a href="s-h.html">Check BMI</a></li> 
+                                
+
+
+             </ul>
+             <a href="#"  class="mobile">&#9776;</a>
+          </nav>
+        </header>
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h2>Login</h2>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn" onclick="abc()">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+
+
+</div>
+<div class="form-popup" id="myyForm">
+<form action="/action_page.php" class="form-container">
+    <h2>Register</h2>
+    
+
+    <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+    <label for="address">Address</label>
+    <input type="text" id="Address" name="Address" placeholder="Your last name..">
+
+
+    <label for="Phone no.">Phone no.</label>
+    <input type="text" id="Phone no." name="Phone no." placeholder="Your last name..">
+
+
+    <label for="Email id">Email id</label>
+    <input type="text" id="Email id" name="Email id" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">India</option>
+      <option value="canada">Pakistan</option>
+      <option value="usa">USA</option>
+    </select>
+      <button type="submit" class="btn" onclick="abc1()">Register</button>
+    <button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+  </form>
+
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+function openForm1() {
+  document.getElementById("myyForm").style.display = "block";
+}
+
+function closeForm1() {
+  document.getElementById("myyForm").style.display = "none";
+}
+function abc()
+{
+  window.alert("Check your password");
+}
+function abc1()
+{
+  window.alert("Check your password");
+}
+
+</script>
+
+
+
+            <aside>
+  <div class="post">
+                  <h1>Recent Blogs</h1>
+ <ul>
+             <div class="post">
+                  <h4>Benefits of Exercises</h4>
+                  <ul>
+                      <li><a href="vk516.html">Exercises for mental wellbeing</a></li>
+                      <li><a href="vk517.html">Exercises for hearthealth</a></li>
+                      <li><a href="vk518.html">Exercises for good digestion</a></li>
+                      <li><a href="vk519.html">Exercises for good memory </a></li>
+                  </ul>
+             </div> </ul>
+<br>
+<ul><div class="post">
+                  <h4>Benefits of healthy diets</h4>
+                  <ul>
+                      <li><a href="vk520.html">Benefits of Fruits</a></li>
+                      <li><a href="vk521.html">Benefits of Green Vegetables</a></li>
+                      <li><a href="vk522.html">Benefits of Herbs</a></li>
+                      <li><a href="vk523.html">Benefits of Green Tea</a></li>
+          
+                  </ul>
+             </div>
+   </ul><br>
+   <ul><div class="post">
+                  <h4>Risk related to exercises</h4>
+                  <ul>
+                      <li><a href="vk524.html">Musculoskeletal system injury</a></li>
+                      <li><a href="vk525.html">Cardiac problems </a></li>
+                      <li><a href="vk526.html">Asthma problem</a></li>
+                   
+                    
+                  </ul>
+             </div>   </ul>
+        </aside>
+        <main>
+            <div class="blog.post">
+                <div class="meta">
+                   <h6>Benefits of Green Tea</h6>
+Green tea comes from the leaves of the camellia sinensis plant, a small shrub native to East Asia and India (Tea Revolution, n.d.). Although the drink has been drunk for centuries, scientists continue to discover new and exciting benefits of the drink even today. Consuming one or more cups of green tea a day can help you unlock some of these benefits.
+ <img src="pexels-photo-3123792.jpeg" alt="">
+Green Tea & More
+
+Green tea
+$2.99
+
+Jasmin tea
+$2.99
+
+100% Matcha green tea powder
+$18.99
+
+Green Tea Powder
+$6.99/lb
+
+Matcha green tea powder mix
+$7.99
+
+
+1. Green tea is a natural stimulant
+Matcha green tea, prepared and raw.
+Green tea is a natural source of caffeine, making it a great way to cheer yourself up when you're tired. The good news is that green tea contains less caffeine than coffee, which means you can enjoy this drink all afternoon without significantly disrupting your sleep or experiencing the jittery side effects of a caffeine overdose (Mayo Clinic, 2014).
+
+2. Green tea can help fight cancer
+Your cells naturally accumulate oxidative damage during regular cell metabolism. A class of molecules called antioxidants can prevent or even reverse that damage. One of the most powerful antioxidants is called epigallocatechin gallate and is found in high amounts in green tea. Epigallocatechin gallate has been shown to reduce the growth of breast and prostate tumors (Liao et al., 1995).
+
+3. Minimal processing leaves nutrients intact
+Unlike soda, another common source of caffeine, tea is relatively unprocessed. After picking the leaves, they are allowed to soften before being rolled to wring out their juices (Tea Class, n.d.). After heat is applied to the leaves, they are dried and ready to use. This minimal amount of processing means that green tea retains many of the phytonutrients available in the actual tea plant.
+
+4. Green tea is associated with a lower risk of cardiovascular disease
+Green tea may also be good for your heart. In a study of 40,530 Japanese who were followed for seven years, drinking three to four cups of green tea per day was associated with a 31% lower risk of dying from cardiovascular disease (Kuriyama, 2006).
+
+5. It can boost your metabolism and help you lose weight
+Matcha smoothie with green tea and peach.
+The phytonutrients in green tea may also help you lose weight and keep it off. A 2009 meta-analysis of studies in this area found that drinking catechin-rich green tea significantly reduced body weight (Hursel et al., 2009). In addition, people who drank green tea were more likely to maintain a healthy weight after significant weight loss.
+ <img src="pexels-photo-3123792.jpeg" alt="">
+6. Green tea balances your ratio of good and bad cholesterol
+Not all cholesterol is bad for you. Low-density lipoprotein (LDL) cholesterol is associated with cardiovascular risk, while high-density lipoprotein (HDL) cholesterol can actually protect you against heart disease. While the exact mechanisms of this effect are unknown, the phytonutrients in green tea appear to be associated with balanced LDL and HDL cholesterol levels, keeping them within a healthy range (Maron et al., 2003).
+
+7. Green tea can help you relax
+Green tea contains the amino acid L-theanine, which is found almost exclusively in tea plants (Raj Juneja et al., 1999). L-theanine acts as a neurotransmitter in the brain, meaning it sends signals to neurons. Several studies have shown that L-theanine appears to increase alpha wave generation in the human brain, suggesting a state of relaxation (Raj Juneja et al., 1999).
+
+8. It can protect your brain from Alzheimer's disease
+Alzheimer's disease is characterized by profound changes in memory and thinking. There is currently no cure for this neurodegenerative disease. However, the antioxidants in green tea appear to reduce the risk of Alzheimer's disease (Weinreb et al., 2004).
+
+9. It may also protect against Parkinson's disease
+Parkinson's disease is a neurodegenerative disorder that affects movement and fine motor skills. Like Alzheimer's disease, Parkinson's disease is progressive and incurable. The polyphenols in green tea may protect against cell damage caused by neurotoxins while promoting the survival of healthy cells (Pan, Jankovic, & Weidong, 2003).
+
+10. Drinking green tea keeps your mouth healthy
+Combine green tea and milk for a delicious treat.
+Your mouth is a breeding ground for bacteria. Green tea has natural antibiotic and antifungal properties. There is even increasing evidence that drinking green tea can protect against cavities and bad breath (Narotzkia, 2012).
+
+11. Green tea compounds can fight MRSA
+Methicillin-resistant staphylococcus aureus, or MRSA, is a strain of antibiotic-resistant bacteria that is commonly transmitted in health care settings. Unlike common staph infections, MRSA is not easily treated with antibiotics. Thus, new avenues of treatment are needed. There is preliminary evidence that green tea may be useful in the fight against MRSA (Zhao et al., 2001).
+
+12. Drinking green tea can stabilize blood sugar levels
+The flavonoids in green tea, including epigallocatechin gallate, have been shown to reduce the liver's glucose production. This means your body regulates blood sugar more effectively, keeping your glucose levels within a healthy range (Waltner-Law, 2002).
+
+13. Green tea may lower your risk of type 2 diabetes
+Type 2 diabetes is becoming an epidemic in the United States, where almost 10% of the population suffers from this condition (American Diabetes Association, 2016). Drinking green tea may lower your risk. Compared to those who drank one cup per week, participants who drank more than six cups of tea per day had an astonishing 33% lower risk of type 2 diabetes (Iso et al., 2006). This effect persisted even after researchers controlled for factors such as age, gender and body mass index.
+
+14. The fluoride in it
+</div> 
+      
+        </footer>
+      </div>         
+
+
+
+
+</body>
+</html>
